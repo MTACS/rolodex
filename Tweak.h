@@ -2,11 +2,14 @@
 
 #define WIDTH [UIScreen mainScreen].bounds.size.width
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
+#define PREFERENCES "/var/mobile/Library/Preferences/com.mtac.rolodex.plist"
+#define BLACKLIST @"/var/mobile/Library/Preferences/com.mtac.rolodexapps.plist"
+#define SETTINGS_NOTIF "com.mtac.rolodex/preferences.changed"
 
-static NSString *domain = @"com.mtac.rldxprefs";
-static NSString *PostNotificationString = @"com.mtac.rldxprefs/preferences.changed";
-static BOOL enabled;
+static NSString *domain = @"com.mtac.rolodex";
+BOOL enabled; 
 BOOL touching = NO;
+static int style;
 
 @interface NSUserDefaults (RLDX)
 - (id)objectForKey:(NSString *)key inDomain:(NSString *)domain;

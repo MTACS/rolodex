@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Main Tweak Settings</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>cellClass</key>
+			<string>RLDXSwitch</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.mtac.rolodex</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enable Tweak</string>
+			<key>PostNotification</key>
+			<string>com.mtac.rolodex/preferences.changed</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Style</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>cellClass</key>
+			<string>RLDXTableCell</string>
+			<key>default</key>
+			<string>0</string>
+			<key>defaults</key>
+			<string>com.mtac.rolodex</string>
+			<key>detail</key>
+			<string>RLDXStyleController</string>
+			<key>key</key>
+			<string>style</string>
+			<key>label</key>
+			<string>Popup Style</string>
+			<key>validValues</key>
+			<array>
+				<string>0</string>
+				<string>1</string>
+				<string>2</string>
+			</array>
+			<key>validTitles</key>
+			<array>
+				<string>Automatic</string>
+				<string>Always Dark</string>
+				<string>Always Light</string>
+			</array>
+			<key>PostNotification</key>
+			<string>com.mtac.rolodex/preferences.changed</string>
+			<key>subtitle</key>
+			<string>Auto, Dark &amp; Light</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Apps</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>cellClass</key>
+			<string>RLDXTableCell</string>
+			<key>detail</key>
+			<string>ATLApplicationListMultiSelectionController</string>
+			<key>defaults</key>
+			<string>com.mtac.rolodexapps</string>
+			<key>key</key>
+			<string>blacklisted</string>
+			<key>label</key>
+			<string>Blacklisted Apps</string>
+			<key>sections</key>
+			<array>
+				<dict>
+					<key>sectionType</key>
+					<string>Visible</string>
+				</dict>
+				<dict>
+					<key>sectionType</key>
+					<string>Hidden</string>
+				</dict>
+			</array>
+			<key>showIdentifiersAsSubtitle</key>
+			<true/>
+			<key>useSearchBar</key>
+			<true/>
+			<key>defaultApplicationSwitchValue</key>
+			<false/>
+			<key>subtitle</key>
+			<string>Choose when Rolodex is loaded</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Contact &amp; Support</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>cellClass</key>
+			<string>RLDXLinkCell</string>
+			<key>label</key>
+			<string>@MTAC8</string>
+			<key>subtitle</key>
+			<string>Follow on Twitter</string>
+			<key>action</key>
+			<string>twitter</string>
+			<key>id</key>
+			<string>twitter</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>cellClass</key>
+			<string>RLDXLinkCell</string>
+			<key>label</key>
+			<string>Source Code</string>
+			<key>subtitle</key>
+			<string>View on GitHub</string>
+			<key>action</key>
+			<string>github</string>
+			<key>id</key>
+			<string>github</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerAlignment</key>
+			<string>1</string>
+			<key>footerText</key>
+			<string>Rolodex 1.0 © MTAC</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Rolodex</string>
+</dict>
+</plist>

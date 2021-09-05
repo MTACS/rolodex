@@ -14,3 +14,5 @@ Rolodex_FILES = Tweak.xm
 Rolodex_CFLAGS = -fobjc-arc -Wdeprecated-declarations -Wno-deprecated-declarations
 
 include $(THEOS_MAKE_PATH)/tweak.mk
+SUBPROJECTS += rldxprefs
+include $(THEOS_MAKE_PATH)/aggregate.mk
